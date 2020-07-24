@@ -19,6 +19,7 @@ body{
 h1,h3,h4{
 	color:#ffffff;
 }
+
 .help{
 	margin-top: 100px;
 	height:1000px;
@@ -43,6 +44,7 @@ border: none;
   z-index:1;
    font-family:'Grenze Gotisch', cursive;
 }
+
 .navbar-right{
   float:right;
   padding-right:10%;
