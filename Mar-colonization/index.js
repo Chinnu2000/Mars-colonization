@@ -9,7 +9,7 @@ function initiate_players(comp,user){
 	player = comp;
 	opponent = user;
 }
-
+  
 function findBestMove(currentBoardState){
 	var bestMove = -Infinity;
 	let pos = -1;
