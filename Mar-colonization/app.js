@@ -31,6 +31,60 @@ var winningLine = [];
 var count_alert =0;
 winningLine = [[0,1,2],[0,3,6],[3,4,5],[1,4,7],[6,7,8],[2,5,8],[0,4,8],[2,4,6]];
 
+
+//audio 
+function togglePlay() {
+  isPlaying ? myAudio.pause() : myAudio.play();
+};
+
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
+
+//fullscreen
+
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
+// themes
+function changeimg1(){
+	document.body.style.backgroundImage="url(Images/background1.jpg)";
+}
+
+function changeimg2(){
+	document.body.style.backgroundImage="url(Images/background2.jpg)";
+}
+
+function changeimg3(){
+	document.body.style.backgroundImage="url(Images/background3.jpg)";
+}
+
+
 //checks which depth has been selected
 function radioButtonCheck(){
 	var element = document.getElementsByName("choice");
