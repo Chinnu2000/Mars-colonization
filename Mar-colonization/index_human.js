@@ -6,7 +6,7 @@ var flag_play1 = 0;
 var flag_play2 = 0;
 var boardState = [];
 var val;
-var winner = '';
+var winner = ''; 
 var turnSequence = [];
 var winningLine = [[0,1,2],[0,3,6],[3,4,5],[1,4,7],[6,7,8],[2,5,8],[0,4,8],[2,4,6]];
 var winLine = [];
