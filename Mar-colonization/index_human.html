@@ -1,0 +1,98 @@
+
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Tic Tac Toe - Minimax</title>
+	<link href= "style.css"rel="stylesheet">
+	<link href= "app.css"rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<header>
+
+  
+    <nav class="navbar navbar-default">
+      <a href="index_main.html" class="navbar-logo"> <img src="Images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">XOXO</a>
+      <div class="navbar-right">
+		  <button  type="button" class="btn btn-light" onclick="openFullscreen();">
+		    <img src="Images/full.png" width="30" height="30" style="float:right" class="d-inline-block align" alt="" loading="lazy">
+		  </button>
+      	<audio src="rr.mp3" id="myAudio"  preload="auto"></audio>
+        <button   type="button" class="btn btn-light" onClick="togglePlay()"><img src="Images/sound.png" width="30" height="30"  class="d-inline-block align-top" alt="" loading="lazy"> </button>
+      </div>
+    </nav>
+
+</header>
+<body>
+	<div id="base">
+		<div id="sidewrap">
+			<div id="left" style='height:465px'>
+				<h2 class = 'gameType_heading'>Got a friend ha?</h2>
+				<h5 id='player_selection'>Player1 select your letter</h5>
+				<button id="x_player" >X</button>
+				<button id="o_player" >O</button>
+				<p id="turn" style='margin-bottom:20px'>Turn: </p>
+				<p id="win"> </p>
+				
+
+				
+				<center style = 'margin-bottom:50px'>
+				<div class="scoreboard" >
+					
+						
+            			<div class="badges" id="user">User1</div>
+            			<div class="badges" id="comp">User2</div>
+            			<span  id="userscore" >0</span>:<span id="compscore">0</span>
+            			
+            		
+        	     		</div>
+				</center>
+				<button id='reset' class ='buttons'>Reset</button>
+				<button id='hint' class= 'buttons'>Want Hint?</button>
+				<a href="index_computer.html"><button id = "humanVScomputer" class='buttons'>Single?</button></a>
+				
+				<script>
+					document.getElementById('gameType').disabled = true;
+				</script>
+				<a href = "index_main.html" ><button class='buttons'>Home</button></a>
+			</div>
+			
+			<div id="right">
+				<div id="board">
+					<div id="0" class="cell" >
+					</div>
+					<div id="1" class="cell">
+					</div>
+					<div id="2" class="cell" >
+					</div>
+					<div id="3" class="cell">
+					</div>
+					<div id="4" class="cell">
+					</div>
+					<div id="5" class="cell">
+					</div>
+					<div id="6" class="cell" class="xo">
+					</div>
+					<div id="7" class="cell">
+					</div>
+					<div id="8" class="cell">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+	<script src="app.js"></script> 
+	<script src="index_human.js"></script>	
+	<script>
+		main_human();
+	</script>
+</body>
+</html>
+
