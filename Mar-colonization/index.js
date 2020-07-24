@@ -4,6 +4,7 @@ var max_depth = 2;
 var count = 0;
 var best_move = [];
 
+
 function initiate_players(comp,user){
 	player = comp;
 	opponent = user;
