@@ -17,8 +17,6 @@ var hint = document.getElementById('hint');
 var player_selection = document.getElementById('player_selection');
 
 
-
-
 function main_human(){
 	//console.log("i reached the main_human successfully");
 	init_human();
