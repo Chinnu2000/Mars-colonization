@@ -19,12 +19,11 @@
     <nav class="navbar navbar-default">
       <a href="index_main.html" class="navbar-logo"> <img src="Images/logo.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">XOXO</a>
        
-	    <div class="navbar-right">
-		<span>
-	      
-	      
-	      	
-		  <button class="btn btn-light dropdown-toggle" class="dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    
+		<ul class="nav navbar-nav navbar-right" class="navbar-nav mr-auto">
+		<li>
+			<div class="dropdown">
+		  <button class="btn btn-light dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		    Theme
 		  </button>
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -32,13 +31,13 @@
 		    <button class="dropdown-item"   type="button" onclick="changeimg2()">background2</button>
 		    <button class="dropdown-item"   type="button" onclick="changeimg3()">background3</button>
 		  </div>
-	      
-		
+				</li>
+		<li>
 		  <button  type="button" class="btn btn-light" onclick="openFullscreen();">
 		    <img src="Images/full.png" width="30" height="30" style="float:right" class="d-inline-block align" alt="" loading="lazy">
 		  </button>
-	      
-		
+			</li>
+		<li>
       	<audio src="rr.mp3" id="myAudio"  preload="auto"></audio>
         <button   type="button" class="btn btn-light" onClick="togglePlay()"><img src="Images/sound.png" width="30" height="30"  class="d-inline-block align-top" alt="" loading="lazy"> </button>
 		      </li>
