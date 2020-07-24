@@ -16,11 +16,11 @@ html,body{
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
+
 .my-button:hover {
     background: #666;
     color: #c1e1e0;
 }
-
 
 .navbar-default {
 background: none;
@@ -61,6 +61,7 @@ border: none;
   text-decoration:border;
   text-decoration-color: black;
 }
+
 .navbar-logo{
   padding-left:10%;
   font-family:'Grenze Gotisch', cursive;
