@@ -293,13 +293,11 @@ function medium(currentBoardState){
 			return i;
 		}
 	}
-
 }
 
 function hard(currentBoardState){
 	var line; // this is for countering the opponent
 	//checking if any move of the user can make user win
-	
 
 	// this loop will check whether any move can make the computer win
 	for(let i=0;i<winningLine.length;i++){
@@ -315,7 +313,6 @@ function hard(currentBoardState){
 			currentBoardState[line[0]]!='' && currentBoardState[line[2]] == comp && currentBoardState[line[1]] == ''){
 			return line[1];
 		}
-
 	}
 
 	for (let i=0;i<winningLine.length;i++){
@@ -389,7 +386,6 @@ function easiest(currentBoardState){
 		}
 	}
 }
-
 
 
 function getResults(){
