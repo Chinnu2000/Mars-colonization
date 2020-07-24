@@ -20,8 +20,7 @@ html,body{
 .my-button:hover {
     background: #666;
     color: #c1e1e0;
-}
-
+} 
 .navbar-default {
 background: none;
 border: none;
